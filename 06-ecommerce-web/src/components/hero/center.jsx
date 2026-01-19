@@ -1,11 +1,11 @@
 import Left from "./left"
 import Right from "./right"
 
-const Center = () => {
+const Center = (props) => {
   return (
-    <div className=" flex justify-between h-screen gap-2">
+    <div className=" flex justify-between h-svh gap-2">
     <Left />
-    <Right />
+    <Right details={props.details}/>
     </div>
   )
 }
